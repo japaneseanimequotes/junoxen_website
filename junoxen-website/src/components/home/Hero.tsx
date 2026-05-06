@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white pt-24">
-      <div className="w-[90%] md:w-[85%] mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="w-[90%] md:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
         {/* LEFT */}
         <div>
-          <h1 className="text-3xl md:text-5xl font-extrabold uppercase leading-tight mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold uppercase leading-tight mb-4">
             YOUR STRATEGIC PARTNER IN DIGITAL MARKETING SUCCESS
           </h1>
 
@@ -15,17 +15,17 @@ export default function Hero() {
             Your Trusted IT and Digital Marketing Agency in India
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg text-center hover:bg-blue-700 transition"
             >
               Get Started
             </Link>
 
             <Link
               href="/services"
-              className="border border-gray-300 px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+              className="border border-gray-300 px-6 py-3 rounded-lg text-center hover:bg-gray-100 transition"
             >
               View Services
             </Link>
@@ -37,7 +37,7 @@ export default function Hero() {
           <img
             src="/images/charminar.png"
             alt="charminar"
-            className="w-full max-w-md"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md"
           />
         </div>
 

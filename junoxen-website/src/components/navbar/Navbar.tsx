@@ -18,16 +18,16 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-4 left-0 right-0 z-50">
-      <div className="w-[95%] md:w-[85%] mx-auto bg-white shadow-lg rounded-full px-8 py-4 flex items-center justify-between">
+      <div className="w-[95%] md:w-[85%] mx-auto bg-white shadow-lg rounded-md px-8 py-4 flex items-center justify-between">
 
         {/* LOGO */}
         <div className="flex items-center gap-3">
-          <img src="/images/logo.png" alt="logo" className="h-12 md:h-10 w-auto" />
+          <img src="/images/logo.png" alt="logo" className="h-10 md:h-12" />
           <span className="font-bold text-lg md:text-xl">JUNOXEN</span>
         </div>
 
         {/* DESKTOP MENU */}
-        <div className="hidden md:flex items-center gap-8 relative">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8 relative">
 
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About</Link>
